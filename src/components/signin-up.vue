@@ -10,8 +10,7 @@
             <div class="card-body p-lg-5">
               <h3 class="mb-4">Salut, Bon retour parmis nous! 👋👋</h3>
               <p class="text-muted text-sm mb-5">
-                Renseigner vos identifiants dans les
-                                    champs suivants
+                Renseigner vos identifiants dans les champs suivants
               </p>
               <form id="loginForm" action="index.html">
                 <div class="form-floating mb-3">
@@ -41,7 +40,9 @@
                     name="remember"
                     id="remember"
                   />
-                  <label class="form-check-label" for="remember">Se souvenir de moi</label>
+                  <label class="form-check-label" for="remember"
+                    >Se souvenir de moi</label
+                  >
                 </div>
                 <button class="btn btn-primary" type="button">Se Connecter</button>
               </form>
@@ -62,30 +63,27 @@
             <div class="card-body p-lg-5">
               <h3 class="mb-4">Salut, Bien venus parmis nous! 👋👋</h3>
               <p class="text-muted text-sm mb-5">
-                Choisissez votre catégorie d’établissement
-                et remplissez le formulaire
+                Choisissez votre catégorie d’établissement et remplissez le formulaire
               </p>
               <form action="index.html">
+                <select class="form-select mb-3" aria-label="Choix établissement">
+                  <option value="">Choisir votre établissement</option>
+                  <option value="1">Jardin d’enfants</option>
+                  <option value="2">Primaire</option>
+                  <option value="3">Collège</option>
+                  <option value="4">Lycée</option>
+                  <option value="5">Université</option>
+                </select>
+
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="username"
-                    type="email"
-                    placeholder="name@example.com"
+                    id="name"
+                    type="text"
+                    placeholder="Nom de l'établissement"
                     required
                   />
-                  <label for="username">choisir le type d’etablisement</label>
-                </div>
-
-                 <div class="form-floating mb-3">
-                  <input
-                    class="form-control"
-                    id="username"
-                    type="email"
-                    placeholder="name@example.com"
-                    required
-                  />
-                  <label for="username">Nom de l’établissement</label>
+                  <label for="name">Nom de l’établissement</label>
                 </div>
 
                 <div class="form-floating mb-3">
@@ -102,60 +100,47 @@
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="username"
-                    type="email"
-                    placeholder="name@example.com"
+                    id="phone"
+                    type="tel"
+                    placeholder="+228 90 00 00 00"
                     required
                   />
-                  <label for="username">choisir le type d’etablisement</label>
+                  <label for="phone">Numero de l’établissement</label>
                 </div>
 
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="username"
-                    type="email"
-                    placeholder="name@example.com"
+                    id="type"
+                    type="text"
+                    placeholder="Type d'établissement"
                     required
                   />
-                  <label for="username">Numero de l’établissement</label>
+                  <label for="type">Type de l’établissement</label>
                 </div>
 
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="username"
-                    type="email"
-                    placeholder="name@example.com"
+                    id="location"
+                    type="text"
+                    placeholder="lome - togo"
                     required
                   />
-                  <label for="username">Type de l’établissement</label>
+                  <label for="location">Localisation</label>
                 </div>
 
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="username"
-                    type="email"
-                    placeholder="name@example.com"
+                    id="souscription"
+                    type="text"
+                    placeholder="Souscription"
                     required
                   />
-                  <label for="username">Localisation</label>
+                  <label for="souscription">Souscription</label>
                 </div>
 
-                <div class="form-floating mb-3">
-                  <input
-                    class="form-control"
-                    id="username"
-                    type="email"
-                    placeholder="name@example.com"
-                    required
-                  />
-                  <label for="username">Souscription</label>
-                </div>
-
-                
-                
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
@@ -164,7 +149,7 @@
                     placeholder="Password"
                     required
                   />
-        
+
                   <label for="floatingPassword">Mot de passe</label>
                 </div>
                 <div class="form-check mb-3">
@@ -175,7 +160,8 @@
                     id="agree"
                   />
                   <label class="form-check-label" for="agree"
-                    >Je suis d'accord avec les <a href="#">termes et conditions</a>.</label
+                    >Je suis d'accord avec les
+                    <a href="#">termes et conditions</a>.</label
                   >
                 </div>
                 <div class="form-group">
@@ -244,11 +230,10 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 .card-header:first-child {
   border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
