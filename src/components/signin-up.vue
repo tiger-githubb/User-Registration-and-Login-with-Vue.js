@@ -192,7 +192,7 @@
             style="transform: rotate(10deg)"
           />
           <h1 class="mb-4">
-            FindSholla.com <br class="d-none d-lg-inline" />Trouber votre blaaaa.
+            FindSholla.com <br class="d-none d-lg-inline" />Trouver votre établissement.
           </h1>
           <p class="lead text-muted">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
