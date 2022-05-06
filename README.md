@@ -1,4 +1,6 @@
-# logger
+# Formulaire d'inscription avec vueJS
+
+Le processus d'enregistrement et de connexion est l'une des caractéristiques les plus importantes de presque toutes les plateformes numériques. C'est tellement important que les E-commerces ou les plateformes SAAS utilisent généralement l'enregistrement comme l'une de leurs API. 
 
 ## Project setup
 ```
